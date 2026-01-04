@@ -13,12 +13,14 @@
 <header>
   <div class="container nav">
     <div class="brand">
-      <span class="pill">
-        <span class="dot"></span>
-        <span class="mono">GOLD NODE</span>
-      </span>
+      <span class="pill"><span class="dot"></span><span class="mono">GOLD NODE</span></span>
       <span class="mono" style="color:#64748b;font-size:12px">non-commercial</span>
     </div>
+
+    <nav class="menu mono" aria-label="Primary">
+      <a href="/materials/">/materials</a>
+      <a href="/lab-notes/">/lab-notes</a>
+    </nav>
   </div>
 </header>
 
@@ -28,15 +30,24 @@
 
   <ul class="notes-list">
     <li>
-      <a href="/lab-notes/fatiga-material-oro.html">
-        Fatiga material en oro bajo uso prolongado
-      </a>
+      <a href="/lab-notes/fatiga-material-oro.html">Fatiga material en oro bajo uso prolongado</a>
+      <div class="muted" style="margin-top:6px">
+        Microdeformaciones repetidas, concentradores de tensión, signos tempranos y criterios de prevención.
+      </div>
     </li>
   </ul>
+
+  <hr style="margin:28px 0">
+
+  <p class="muted">
+    Para agregar una nota nueva: crear el archivo <span class="mono">.html</span> dentro de <span class="mono">/lab-notes/</span> y sumar una línea en esta lista.
+  </p>
 </main>
 
-<footer class="container muted">
-  <a href="/">← Volver al laboratorio</a>
+<footer class="container footer">
+  <div class="muted">
+    <a href="/">← Volver al laboratorio</a>
+  </div>
 </footer>
 
 </body>
