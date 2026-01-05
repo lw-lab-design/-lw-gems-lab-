@@ -13,11 +13,11 @@
 <header class="topbar">
   <div class="container">
     <div class="brand">
-      <a class="brandName" href="/">GOLD NODE</a>
+      <a class="brandName" href="/" aria-label="GOLD NODE Home">GOLD NODE</a>
       <span class="brandTag">non-commercial</span>
     </div>
 
-    <nav class="menu">
+    <nav class="menu" aria-label="Primary">
       <a href="/">Lab Home</a>
       <a href="/materials/">Ciencia de materiales</a>
       <a aria-current="page" href="/lab-notes/">Notas técnicas</a>
@@ -27,46 +27,35 @@
 </header>
 
 <main>
-  <header class="pageHeader">
+  <section class="hero">
+    <div class="kicker">Archivo · Oro (Au)</div>
     <h1>Notas técnicas</h1>
-    <p class="muted">
-      Archivo técnico · Oro (Au) · Lectura material aplicada
-    </p>
-  </header>
-
-  <section class="notesList">
-
-    <article class="noteItem">
-      <h2>
-        <a href="/lab-notes/2026-01-fatiga-material-oro.html">
-          Fatiga material en oro bajo uso prolongado
-        </a>
-      </h2>
-      <p class="noteMeta">
-        Microdeformaciones repetidas, concentradores de tensión, signos tempranos y criterios de prevención.
-      </p>
-    </article>
-
-    <article class="noteItem">
-      <h2>
-        <a href="/lab-notes/2026-01-superficie-y-desgaste-oro.html">
-          Superficie y desgaste del oro en uso técnico
-        </a>
-      </h2>
-      <p class="noteMeta">
-        Acabado superficial, fricción, desgaste progresivo y lectura material.
-      </p>
-    </article>
-
+    <p class="lead">Lectura material aplicada: superficie, desgaste, fatiga y criterios de uso.</p>
   </section>
 
-  <nav class="pageBack">
-    <a href="/">← Volver al laboratorio</a>
-  </nav>
+  <section class="notesGrid" aria-label="Listado de notas">
+    <a class="noteCard" href="/lab-notes/2026-01-fatiga-material-oro.html">
+      <div class="noteTitle">Fatiga material en oro bajo uso prolongado</div>
+      <div class="noteDesc">Microdeformaciones repetidas, concentradores de tensión, signos tempranos y criterios de prevención.</div>
+      <div class="noteMeta">LAB NOTE · ORO (Au)</div>
+    </a>
+
+    <a class="noteCard" href="/lab-notes/2026-01-superficie-y-desgaste-oro.html">
+      <div class="noteTitle">Superficie y desgaste del oro en uso técnico</div>
+      <div class="noteDesc">Acabado superficial, fricción, desgaste progresivo y lectura material.</div>
+      <div class="noteMeta">LAB NOTE · ORO (Au)</div>
+    </a>
+  </section>
+
+  <div class="backRow">
+    <a class="backLink" href="/">← Volver al laboratorio</a>
+  </div>
 </main>
 
-<footer>
-  <small>GOLD NODE · Lab Notes</small>
+<footer class="footer">
+  <div class="container">
+    <small>GOLD NODE · Lab Notes</small>
+  </div>
 </footer>
 
 </body>
