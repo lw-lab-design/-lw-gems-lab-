@@ -10,27 +10,27 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body>
+<body class="page-notes-index">
 
-<header>
-  <div class="container nav">
+<header class="topbar">
+  <div class="container">
     <div class="brand">
-      <span class="pill"><span class="dot"></span><span class="mono">GOLD NODE</span></span>
-      <span class="mono" style="color:#64748b;font-size:12px">non-commercial</span>
+      <a class="brandName" href="/" aria-label="GOLD NODE Home">GOLD NODE</a>
+      <span class="brandTag">non-commercial</span>
     </div>
 
-    <nav class="menu mono" aria-label="Primary">
+    <nav class="menu" aria-label="Primary">
       <a href="/">Lab Home</a>
-      <a href="/ciencia-de-materiales/">Ciencia de materiales</a>
+      <a aria-current="page" href="/materials/">Ciencia de materiales</a>
       <a href="/lab-notes/">Notas técnicas</a>
       <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
     </nav>
   </div>
 </header>
 
-<main class="container">
-  <section style="margin-top:48px">
-    <div class="eyebrow mono">ARCHIVO · FUNDAMENTOS</div>
+<main>
+  <section class="hero">
+    <div class="kicker">Archivo · Fundamentos</div>
     <h1>Ciencia de materiales</h1>
     <p class="lead">
       Fundamentos físicos y estructurales de materiales clave del laboratorio. La unidad primaria es el material (no el fenómeno):
@@ -39,69 +39,59 @@
   </section>
 
   <!-- ORO -->
-  <section style="margin-top:40px">
-    <h2>Oro (Au)</h2>
+  <section class="notesGrid" aria-label="Oro (Au)">
+    <a class="noteCard" href="/materials/oro-au/morfologia-natural-oro.html">
+      <div class="noteTitle">Morfología natural del oro y su lectura material</div>
+      <div class="noteDesc">Formas de ocurrencia primaria y secundaria, geometrías no ideales y relación entre proceso y forma observable.</div>
+      <div class="noteMeta">MATERIAL · ORO (AU)</div>
+    </a>
 
-    <div class="ms-grid">
-      <a class="ms-card" href="/ciencia-de-materiales/oro-au/morfologia-natural-oro.html">
-        <div class="ms-title">Morfología natural del oro y su lectura material</div>
-        <div class="ms-desc">Formas de ocurrencia primaria y secundaria, geometrías no ideales y relación entre proceso y forma observable.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · ORO (AU)</div>
-      </a>
-
-      <a class="ms-card" href="/ciencia-de-materiales/oro-au/estructura-cristalina-comportamiento-oro.html">
-        <div class="ms-title">Estructura cristalina del oro y comportamiento mecánico</div>
-        <div class="ms-desc">Red cristalina FCC, deslizamiento atómico y su impacto en ductilidad, conformado y estabilidad material.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · ORO (AU)</div>
-      </a>
-    </div>
+    <a class="noteCard" href="/materials/oro-au/estructura-cristalina-comportamiento-oro.html">
+      <div class="noteTitle">Estructura cristalina del oro y comportamiento mecánico</div>
+      <div class="noteDesc">Red cristalina FCC, deslizamiento atómico y su impacto en ductilidad, conformado y estabilidad material.</div>
+      <div class="noteMeta">MATERIAL · ORO (AU)</div>
+    </a>
   </section>
 
   <!-- DIAMANTE -->
-  <section style="margin-top:40px">
-    <h2>Diamante (C)</h2>
+  <section class="notesGrid" aria-label="Diamante (C)" style="margin-top:18px">
+    <a class="noteCard" href="/materials/diamante-c/crecimiento-cristalino-diamante.html">
+      <div class="noteTitle">Crecimiento cristalino del diamante: entorno y huella interna</div>
+      <div class="noteDesc">Condiciones de formación, cinética de crecimiento y cómo el entorno queda registrado en el cristal.</div>
+      <div class="noteMeta">MATERIAL · DIAMANTE (C)</div>
+    </a>
 
-    <div class="ms-grid">
-      <a class="ms-card" href="/ciencia-de-materiales/diamante-c/crecimiento-cristalino-diamante.html">
-        <div class="ms-title">Crecimiento cristalino del diamante: entorno y huella interna</div>
-        <div class="ms-desc">Condiciones de formación, cinética de crecimiento y cómo el entorno queda registrado en el cristal.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · DIAMANTE (C)</div>
-      </a>
-
-      <a class="ms-card" href="/ciencia-de-materiales/diamante-c/defectos-y-coherencia-optica-diamante.html">
-        <div class="ms-title">Defectos y coherencia óptica en diamante</div>
-        <div class="ms-desc">Defect density, centros de color y dispersión: impacto directo en transparencia, brillo y rendimiento óptico.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · DIAMANTE (C)</div>
-      </a>
-    </div>
+    <a class="noteCard" href="/materials/diamante-c/defectos-y-coherencia-optica-diamante.html">
+      <div class="noteTitle">Defectos y coherencia óptica en diamante</div>
+      <div class="noteDesc">Defect density, centros de color y dispersión: impacto directo en transparencia, brillo y rendimiento óptico.</div>
+      <div class="noteMeta">MATERIAL · DIAMANTE (C)</div>
+    </a>
   </section>
 
   <!-- CORINDÓN -->
-  <section style="margin-top:40px">
-    <h2>Corindón (Al₂O₃)</h2>
+  <section class="notesGrid" aria-label="Corindón (Al₂O₃)" style="margin-top:18px">
+    <a class="noteCard" href="/materials/corindon-al2o3/estructura-cristalina-corindon.html">
+      <div class="noteTitle">Estructura cristalina del corindón y propiedades base</div>
+      <div class="noteDesc">Red trigonal, anisotropías y relación entre estructura y comportamiento físico del material.</div>
+      <div class="noteMeta">MATERIAL · CORINDÓN (AL₂O₃)</div>
+    </a>
 
-    <div class="ms-grid">
-      <a class="ms-card" href="/ciencia-de-materiales/corindon-al2o3/estructura-cristalina-corindon.html">
-        <div class="ms-title">Estructura cristalina del corindón y propiedades base</div>
-        <div class="ms-desc">Red trigonal, anisotropías y relación entre estructura y comportamiento físico del material.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · CORINDÓN (AL₂O₃)</div>
-      </a>
-
-      <a class="ms-card" href="/ciencia-de-materiales/corindon-al2o3/defectos-cromoforos-y-color.html">
-        <div class="ms-title">Defectos cromóforos y origen del color en corindón</div>
-        <div class="ms-desc">Cr, Fe, Ti y mecanismos de absorción: cómo el crecimiento y los defectos controlan color y zonación.</div>
-        <div class="ms-meta mono">MATERIAL SCIENCE · CORINDÓN (AL₂O₃)</div>
-      </a>
-    </div>
+    <a class="noteCard" href="/materials/corindon-al2o3/defectos-cromoforos-y-color.html">
+      <div class="noteTitle">Defectos cromóforos y origen del color en corindón</div>
+      <div class="noteDesc">Cr, Fe, Ti y mecanismos de absorción: cómo el crecimiento y los defectos controlan color y zonación.</div>
+      <div class="noteMeta">MATERIAL · CORINDÓN (AL₂O₃)</div>
+    </a>
   </section>
 
-  <div style="margin-top:48px">
-    <a href="/" class="mono">← Volver al laboratorio</a>
+  <div class="backRow">
+    <a class="backLink" href="/">← Volver al laboratorio</a>
   </div>
 </main>
 
-<footer class="container muted" style="margin:80px auto 40px">
-  GOLD NODE · Material Science
+<footer class="footer">
+  <div class="container">
+    <small>GOLD NODE · Material Science</small>
+  </div>
 </footer>
 
 </body>
