@@ -138,3 +138,84 @@ body.page-note li{
 }
 .muted{color:var(--muted)}
 .small{font-size:13px;color:var(--muted)}
+/* =========================
+   HOME · Jerarquía
+   ========================= */
+body.page-home main{max-width:980px}
+.hero{padding:26px 0 10px}
+.kicker{
+  font-size:12px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:10px;
+}
+.lead{font-size:1.05rem;line-height:1.7;margin-top:8px;margin-bottom:18px}
+.ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+.primaryCta,.secondaryCta{
+  display:inline-block;
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--line);
+  text-decoration:none;
+  font-size:13px;
+}
+.primaryCta{background:var(--chip);border-color:var(--line)}
+.secondaryCta{background:#fff}
+.split{display:grid;grid-template-columns:1.2fr 0.8fr;gap:22px;margin-top:26px}
+@media (max-width:900px){.split{grid-template-columns:1fr}}
+.cards{display:grid;gap:10px;margin-top:12px}
+.card{
+  display:block;
+  padding:14px 14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  text-decoration:none;
+}
+.card:hover{background:var(--chip)}
+.cardTitle{font-weight:700;font-size:14px;margin-bottom:4px}
+.cardMeta{font-size:13px;color:var(--muted)}
+.footer{border-top:1px solid var(--line);padding:18px 0}
+
+/* =========================
+   LAB NOTES INDEX · Cards
+   ========================= */
+body.page-notes-index main{max-width:980px}
+.notesGrid{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+@media (max-width:900px){.notesGrid{grid-template-columns:1fr}}
+.noteCard{
+  display:block;
+  padding:16px 16px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:#fff;
+  text-decoration:none;
+}
+.noteCard:hover{background:var(--chip)}
+.noteTitle{font-weight:800;font-size:14px;line-height:1.25;margin-bottom:6px}
+.noteDesc{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:10px}
+.noteMeta{font-size:12px;color:var(--muted);letter-spacing:0.06em;text-transform:uppercase}
+.backRow{margin-top:22px}
+.backLink{font-size:13px;color:var(--text);text-decoration:none}
+.backLink:hover{text-decoration:underline}
+
+/* =========================
+   NOTES · Tipografía (bajar cuerpo + jerarquía)
+   ========================= */
+body.page-note main{max-width:860px}
+body.page-note p{font-size:0.98rem;line-height:1.78}
+body.page-note h1{font-size:2.05rem;letter-spacing:-0.02em}
+body.page-note h2{font-size:1.22rem;margin-top:26px}
+body.page-note h3{font-size:1.06rem;margin-top:18px}
+body.page-note ul{padding-left:18px}
+body.page-note li{margin:6px 0;font-size:0.98rem}
+body.page-note .muted, body.page-note .small{color:var(--muted)}
+
+
+
