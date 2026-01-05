@@ -1,15 +1,22 @@
 /*
 GOLD NODE · LW Gems
-Technical Laboratory Styles (refinado)
+Technical Laboratory Styles (serio, minimal, editorial)
 */
 
-html { font-size: 16px; }
+:root{
+  --text:#0f172a;
+  --muted:#64748b;
+  --line:#e5e7eb;
+  --bg:#ffffff;
+  --chip:#f1f5f9;
+}
+
+html{ font-size:16px; }
 
 body{
   margin:0;
-  padding:0;
-  background:#ffffff;
-  color:#111111;
+  background:var(--bg);
+  color:var(--text);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, Helvetica, Arial, sans-serif;
   line-height:1.65;
@@ -18,108 +25,146 @@ body{
 }
 
 /* Layout */
-main{
-  max-width: 880px;
-  margin: 96px auto 120px;
+.container{
+  max-width: 1040px;
+  margin: 0 auto;
   padding: 0 22px;
 }
 
-/* Tipografía */
+main{
+  max-width: 920px;
+  margin: 72px auto 120px;
+  padding: 0 22px;
+}
+
+/* Topbar */
+.topbar{
+  position: sticky;
+  top:0;
+  z-index:10;
+  border-bottom:1px solid var(--line);
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(8px);
+}
+
+.topbar .container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding: 14px 22px;
+}
+
+.brand{
+  display:flex;
+  align-items:baseline;
+  gap:10px;
+  white-space:nowrap;
+}
+
+.brandName{
+  font-weight:600;
+  letter-spacing:0.06em;
+  text-transform:uppercase;
+  font-size:13px;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.brandTag{
+  font-size:12px;
+  color:var(--muted);
+}
+
+.menu{
+  display:flex;
+  gap:14px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.menu a{
+  font-size:13px;
+  text-decoration:none;
+  color:var(--text);
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.menu a:hover{
+  background: var(--chip);
+  border-color: var(--line);
+}
+
+/* Typography */
 h1,h2,h3{
-  font-weight: 600;
-  line-height: 1.25;
-  letter-spacing: -0.01em;
+  font-weight:650;
+  line-height:1.2;
+  letter-spacing:-0.01em;
 }
 
-h1{
-  font-size: 2.05rem;
-  margin: 0 0 1.2rem;
-}
-
-h2{
-  font-size: 1.35rem;
-  margin: 3.2rem 0 1rem;
-}
-
-h3{
-  font-size: 1.1rem;
-  margin: 2.2rem 0 0.8rem;
-}
+h1{ font-size: 2.05rem; margin: 0 0 1.1rem; }
+h2{ font-size: 1.35rem; margin: 2.8rem 0 1rem; }
+h3{ font-size: 1.1rem;  margin: 2rem 0 0.8rem; }
 
 p{ margin: 1em 0; }
+.small{ font-size: 0.95rem; color:var(--muted); }
+.muted{ color:var(--muted); }
 
-/* Links */
 a{
-  color:#111111;
+  color: var(--text);
   text-decoration: underline;
   text-underline-offset: 3px;
   text-decoration-thickness: 1px;
 }
-a:hover{ opacity:0.72; }
+a:hover{ opacity:0.75; }
 
-/* Listas */
-ul{ padding-left: 1.2rem; }
-li{ margin: 0.55rem 0; }
-
-/* Separadores */
+/* Dividers */
 hr{
   border:none;
-  border-top:1px solid #e5e7eb;
-  margin: 3.2rem 0;
+  border-top:1px solid var(--line);
+  margin: 3rem 0;
 }
 
-/* Header */
-header{
-  border-bottom:1px solid #e5e7eb;
-  position: sticky;
-  top: 0;
-  background: rgba(255,255,255,0.96);
-  backdrop-filter: blur(6px);
-}
-
-header .container{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 14px 22px;
+/* Notes index: cards */
+.notes{
+  list-style:none;
+  padding:0;
+  margin: 18px 0 0;
   display:flex;
-  align-items:center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-direction:column;
+  gap:12px;
 }
 
-header .brand{
-  display:flex;
-  align-items: baseline;
-  gap: 10px;
+.noteCard{
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding: 14px 16px;
+  background:#fff;
 }
 
-header .brand .mono{
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.noteCard a{
+  text-decoration:none;
+  font-weight:600;
 }
 
-header nav a{
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  padding-bottom: 2px;
-}
-header nav a:hover{
-  opacity: 0.8;
-  border-bottom-color:#111111;
+.noteCard a:hover{
+  text-decoration:underline;
 }
 
-/* Microtexto */
-.muted{
-  color:#6b7280;
+.noteMeta{
+  margin-top:6px;
+  color:var(--muted);
   font-size: 0.95rem;
 }
 
 /* Footer */
 footer{
+  border-top:1px solid var(--line);
   margin-top: 120px;
-  padding: 44px 22px;
-  font-size: 0.88rem;
-  color:#6b7280;
-  border-top:1px solid #e5e7eb;
+  padding: 38px 0;
+  color:var(--muted);
+  font-size: 0.9rem;
 }
