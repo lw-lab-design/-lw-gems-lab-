@@ -104,16 +104,17 @@ body.page-home main{max-width:980px}
 .lead{font-size:1.02rem;line-height:1.68;margin-top:8px;margin-bottom:18px}
 .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
 
-/* HOME · Entradas por material (ledger-style) */
+/* HOME · Entradas por material (ledger-style, sin separador colgante) */
 .entryList{
   display:flex;
   flex-wrap:wrap;
-  gap:12px;
+  gap:14px;
   margin-top:8px;
 }
 
 .entryLink{
-  padding:0;
+  position:relative;
+  padding:0 14px 0 0;
   border:none;
   border-radius:0;
   background:none;
@@ -124,7 +125,8 @@ body.page-home main{max-width:980px}
 
 .entryLink:not(:last-child)::after{
   content:"·";
-  margin-left:12px;
+  position:absolute;
+  right:0;
   color:var(--muted);
 }
 
@@ -137,6 +139,12 @@ body.page-home main{max-width:980px}
   display:block;
   margin-top:10px;
   font-weight:500;
+  text-decoration:none;
+  color:var(--muted);
+}
+.hubSecondary:hover{
+  text-decoration:underline;
+  opacity:1;
 }
 
 .primaryCta,.secondaryCta{
