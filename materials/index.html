@@ -89,11 +89,17 @@
   <header class="topbar" role="banner">
     <div class="container">
       <nav class="topnav" aria-label="Navegación principal">
-        <a href="/" class="brand">GOLD NODE</a>
+        <!-- Absoluto: evita ambigüedad con rewrites -->
+        <a href="https://gold.lw-gems.com/" class="brand">GOLD NODE</a>
+
         <div class="navlinks">
-          <a href="/lab-home/">Lab Home</a>
-          <a href="/materials/" aria-current="page">Materials</a>
-          <a href="/lab-notes/">Notas técnicas</a>
+          <!-- FIX: Lab Home real es la raíz del subdominio -->
+          <a href="https://gold.lw-gems.com/">Lab Home</a>
+
+          <a href="https://gold.lw-gems.com/materials/" aria-current="page">Materials</a>
+          <a href="https://gold.lw-gems.com/lab-notes/">Notas técnicas</a>
+
+          <!-- Sitio comercial: absoluto -->
           <a href="https://lw-gems.com/">LW Gems</a>
         </div>
       </nav>
@@ -115,19 +121,19 @@
       <hr class="sep">
 
       <section class="lw-index__grid">
-        <a class="note-card" href="/materials/oro/">
+        <a class="note-card" href="https://gold.lw-gems.com/materials/oro/">
           <h2>Oro (Au)</h2>
           <p>Forma, estructura, superficie y comportamiento del oro como sistema material.</p>
           <span class="tag">MATERIAL</span>
         </a>
 
-        <a class="note-card" href="/materials/diamante/">
+        <a class="note-card" href="https://gold.lw-gems.com/materials/diamante/">
           <h2>Diamante (C)</h2>
           <p>Crecimiento cristalino, defectos, estructura y propiedades del diamante.</p>
           <span class="tag">MATERIAL</span>
         </a>
 
-        <a class="note-card" href="/materials/corindon/">
+        <a class="note-card" href="https://gold.lw-gems.com/materials/corindon/">
           <h2>Corindón (Al₂O₃)</h2>
           <p>Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</p>
           <span class="tag">MATERIAL</span>
