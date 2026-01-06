@@ -1,98 +1,145 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-AR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- 11–14: lang + content-language + viewport -->
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="es-AR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Ciencia de materiales · GOLD NODE</title>
-  <meta name="description" content="Fundamentos físicos y estructurales de materiales clave del laboratorio: Oro (Au), Diamante (C) y Corindón (Al₂O₃). Estructura, defectos y comportamiento." />
+  <!-- 1–5: title/description + robots + canonical -->
+  <title>Materials · Archivo de materiales · LW Gems</title>
+  <meta name="description" content="Archivo de materiales. Sub-perfiles técnicos no comerciales: Oro, Diamante y Corindón. Lectura material desde un enfoque estructural.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://gold.lw-gems.com/materials/">
 
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- 8: CSS único -->
+  <link rel="stylesheet" href="/assets/css/lw-system.css">
+
+  <!-- OG -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="LW Gems">
+  <meta property="og:title" content="Materials · Archivo de materiales">
+  <meta property="og:description" content="Sub-perfiles técnicos no comerciales: Oro, Diamante y Corindón.">
+  <meta property="og:url" content="https://gold.lw-gems.com/materials/">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Materials · Archivo de materiales">
+  <meta name="twitter:description" content="Sub-perfiles técnicos no comerciales: Oro, Diamante y Corindón.">
+
+  <!-- Metas internas LW -->
+  <meta name="lw:page-type" content="materials-index">
+  <meta name="lw:note-status" content="canonical">
+
+  <!-- 6–7: JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gold.lw-gems.com/#website",
+        "url": "https://gold.lw-gems.com/",
+        "name": "LW Gems · Gold Node"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://lw-gems.com/#organization",
+        "name": "LW Gems",
+        "url": "https://lw-gems.com/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gold.lw-gems.com/materials/#webpage",
+        "url": "https://gold.lw-gems.com/materials/",
+        "name": "Materials · Archivo de materiales",
+        "isPartOf": { "@id": "https://gold.lw-gems.com/#website" },
+        "about": [
+          { "@type": "Thing", "name": "Oro (Au)" },
+          { "@type": "Thing", "name": "Diamante (C)" },
+          { "@type": "Thing", "name": "Corindón (Al₂O₃)" }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gold.lw-gems.com/materials/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Lab Home",
+            "item": "https://gold.lw-gems.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Materials",
+            "item": "https://gold.lw-gems.com/materials/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 
-<body class="page-notes-index">
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
 
-<header class="topbar">
-  <div class="container">
-    <div class="brand">
-      <a class="brandName" href="/" aria-label="GOLD NODE Home">GOLD NODE</a>
-      <span class="brandTag">non-commercial</span>
+  <header class="topbar" role="banner">
+    <div class="container">
+      <nav class="topnav" aria-label="Navegación principal">
+        <a href="/" class="brand">GOLD NODE</a>
+        <div class="navlinks">
+          <a href="/lab-home/">Lab Home</a>
+          <a href="/materials/" aria-current="page">Materials</a>
+          <a href="/lab-notes/">Notas técnicas</a>
+          <a href="https://lw-gems.com/">LW Gems</a>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <nav class="menu" aria-label="Primary">
-      <a href="/">Lab Home</a>
-      <a aria-current="page" href="/materials/">Ciencia de materiales</a>
-      <a href="/lab-notes/">Notas técnicas</a>
-      <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
-    </nav>
-  </div>
-</header>
+  <main id="content" class="container" role="main">
+    <section class="lw-index">
+      <header class="lw-index__hero">
+        <p class="kicker">ARCHIVO · MATERIALS</p>
+        <h1 class="title">Materials</h1>
 
-<main>
-  <section class="hero">
-    <div class="kicker">Archivo · Fundamentos</div>
-    <h1>Ciencia de materiales</h1>
-    <p class="lead">
-      Fundamentos físicos y estructurales de materiales clave del laboratorio. La unidad primaria es el material (no el fenómeno):
-      cada archivo integra estructura, defectos y comportamiento.
-    </p>
-  </section>
+        <p class="lead">
+          Archivo de materiales del laboratorio. Cada entrada corresponde a un sub-perfil material
+          tratado desde una lectura técnica y no comercial.
+        </p>
+      </header>
 
-  <!-- ORO -->
-  <section class="notesGrid" aria-label="Oro (Au)">
-    <a class="noteCard" href="/materials/oro-au/morfologia-natural-oro.html">
-      <div class="noteTitle">Morfología natural del oro y su lectura material</div>
-      <div class="noteDesc">Formas de ocurrencia primaria y secundaria, geometrías no ideales y relación entre proceso y forma observable.</div>
-      <div class="noteMeta">MATERIAL · ORO (AU)</div>
-    </a>
+      <hr class="sep">
 
-    <a class="noteCard" href="/materials/oro-au/estructura-cristalina-comportamiento-oro.html">
-      <div class="noteTitle">Estructura cristalina del oro y comportamiento mecánico</div>
-      <div class="noteDesc">Red cristalina FCC, deslizamiento atómico y su impacto en ductilidad, conformado y estabilidad material.</div>
-      <div class="noteMeta">MATERIAL · ORO (AU)</div>
-    </a>
-  </section>
+      <section class="lw-index__grid">
+        <a class="note-card" href="/materials/oro/">
+          <h2>Oro (Au)</h2>
+          <p>Forma, estructura, superficie y comportamiento del oro como sistema material.</p>
+          <span class="tag">MATERIAL</span>
+        </a>
 
-  <!-- DIAMANTE -->
-  <section class="notesGrid" aria-label="Diamante (C)" style="margin-top:18px">
-    <a class="noteCard" href="/materials/diamante-c/crecimiento-cristalino-diamante.html">
-      <div class="noteTitle">Crecimiento cristalino del diamante: entorno y huella interna</div>
-      <div class="noteDesc">Condiciones de formación, cinética de crecimiento y cómo el entorno queda registrado en el cristal.</div>
-      <div class="noteMeta">MATERIAL · DIAMANTE (C)</div>
-    </a>
+        <a class="note-card" href="/materials/diamante/">
+          <h2>Diamante (C)</h2>
+          <p>Crecimiento cristalino, defectos, estructura y propiedades del diamante.</p>
+          <span class="tag">MATERIAL</span>
+        </a>
 
-    <a class="noteCard" href="/materials/diamante-c/defectos-y-coherencia-optica-diamante.html">
-      <div class="noteTitle">Defectos y coherencia óptica en diamante</div>
-      <div class="noteDesc">Defect density, centros de color y dispersión: impacto directo en transparencia, brillo y rendimiento óptico.</div>
-      <div class="noteMeta">MATERIAL · DIAMANTE (C)</div>
-    </a>
-  </section>
+        <a class="note-card" href="/materials/corindon/">
+          <h2>Corindón (Al₂O₃)</h2>
+          <p>Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</p>
+          <span class="tag">MATERIAL</span>
+        </a>
+      </section>
+    </section>
+  </main>
 
-  <!-- CORINDÓN -->
-  <section class="notesGrid" aria-label="Corindón (Al₂O₃)" style="margin-top:18px">
-    <a class="noteCard" href="/materials/corindon-al2o3/estructura-cristalina-corindon.html">
-      <div class="noteTitle">Estructura cristalina del corindón y propiedades base</div>
-      <div class="noteDesc">Red trigonal, anisotropías y relación entre estructura y comportamiento físico del material.</div>
-      <div class="noteMeta">MATERIAL · CORINDÓN (AL₂O₃)</div>
-    </a>
-
-    <a class="noteCard" href="/materials/corindon-al2o3/defectos-cromoforos-y-color.html">
-      <div class="noteTitle">Defectos cromóforos y origen del color en corindón</div>
-      <div class="noteDesc">Cr, Fe, Ti y mecanismos de absorción: cómo el crecimiento y los defectos controlan color y zonación.</div>
-      <div class="noteMeta">MATERIAL · CORINDÓN (AL₂O₃)</div>
-    </a>
-  </section>
-
-  <div class="backRow">
-    <a class="backLink" href="/">← Volver al laboratorio</a>
-  </div>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <small>GOLD NODE · Material Science</small>
-  </div>
-</footer>
-
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <p class="muted">LW Gems · Gold Node (non-commercial)</p>
+    </div>
+  </footer>
 </body>
 </html>
