@@ -4,13 +4,14 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Materials · Gold Node · LW Gems Lab</title>
-  <meta name="description" content="Archivo de materiales del laboratorio. Cada entrada corresponde a un sub-perfil material tratado desde una lectura técnica y no comercial." />
+  <title>Gold Node · LW Gems Lab</title>
+  <meta name="description" content="Archivo técnico no comercial orientado a la lectura, evaluación y comparación de materiales utilizados en contextos de decisión sensibles." />
 
+  <!-- CSS canónico -->
   <link rel="stylesheet" href="/assets/css/lw-system.css" />
 </head>
 
-<body class="page-materials">
+<body class="page-home">
 
 <header class="topbar">
   <div class="container">
@@ -20,8 +21,8 @@
     </div>
 
     <nav class="menu" aria-label="Primary">
-      <a href="/">Lab Home</a>
-      <a aria-current="page" href="/materials/">Ciencia de materiales</a>
+      <a aria-current="page" href="/">Lab Home</a>
+      <a href="/materials/">Ciencia de materiales</a>
       <a href="/lab-notes/">Notas técnicas</a>
       <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
     </nav>
@@ -31,37 +32,26 @@
 <main class="container">
 
   <section class="hero">
-    <div class="kicker">ARCHIVO · MATERIALS</div>
+    <div class="kicker">LW GEMS · MATERIAL DECISION LAB</div>
 
-    <h1>Materials</h1>
+    <h1>Gold Node</h1>
 
     <p class="lead">
-      Archivo de materiales del laboratorio. Cada entrada corresponde a un sub-perfil material tratado desde una lectura técnica y no comercial.
+      Archivo técnico no comercial orientado a la lectura, evaluación y comparación
+      de materiales utilizados en contextos de decisión sensibles.
     </p>
+
+    <!-- Entradas por material (ledger-style) -->
+    <nav class="entryList" aria-label="Material nodes">
+      <a class="entryLink" href="/materials/diamante/">Diamante</a>
+      <a class="entryLink" href="/materials/oro/">Oro</a>
+      <a class="entryLink" href="/materials/corindon/">
+        Corindón <span class="muted">(zafiro / rubí)</span>
+      </a>
+    </nav>
+
+    <a class="hubSecondary" href="/lab-notes/">Acceder a notas técnicas</a>
   </section>
-
-  <hr>
-
-  <h2 class="sectionTitle">Sub-perfiles</h2>
-
-  <nav aria-label="Material list">
-    <div class="cards">
-      <a class="card" href="/materials/oro/">
-        <div class="cardTitle">Oro (Au)</div>
-        <div class="cardMeta">Forma, estructura, superficie y comportamiento del oro como sistema material.</div>
-      </a>
-
-      <a class="card" href="/materials/diamante/">
-        <div class="cardTitle">Diamante (C)</div>
-        <div class="cardMeta">Crecimiento cristalino, defectos, estructura y propiedades del diamante.</div>
-      </a>
-
-      <a class="card" href="/materials/corindon/">
-        <div class="cardTitle">Corindón (Al₂O₃)</div>
-        <div class="cardMeta">Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</div>
-      </a>
-    </div>
-  </nav>
 
 </main>
 
