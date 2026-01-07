@@ -1,3 +1,4 @@
+*{box-sizing:border-box}
 :root{
   --text:#0b1220;
   --muted:#667085;
@@ -24,7 +25,7 @@ body{
 
 /* Layout */
 .container{max-width:1100px;margin:0 auto;padding:0 22px}
-main{max-width:920px;margin:64px auto 120px;padding:0 22px}
+main{max-width:920px;margin:64px auto 120px;padding:0}
 
 /* Topbar (Meta-like, clean) */
 .topbar{
