@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="content-language" content="es-AR">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Procesos internos e inclusiones en diamante (C): lectura reproducible · LW Gems</title>
+  <meta name="description" content="Nota técnica sobre procesos internos en diamante (C): inclusiones, rasgos de crecimiento, tensiones y modificaciones posteriores. Señales observables, jerarquía de inferencia y límites de interpretación.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <link rel="canonical" href="https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html">
+
+  <link rel="stylesheet" href="/assets/css/lw-system.css">
+
+  <meta name="lw:note-version" content="1.0.0">
+  <meta name="lw:note-status" content="canonical">
+  <meta name="lw:material" content="diamante">
+  <meta name="lw:domain" content="materials">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://gold.lw-gems.com/#website",
+        "url": "https://gold.lw-gems.com/",
+        "name": "LW Gems · Gold Node"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://lw-gems.com/#organization",
+        "name": "LW Gems",
+        "url": "https://lw-gems.com/"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html#webpage",
+        "url": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html",
+        "name": "Procesos internos e inclusiones en diamante (C): lectura reproducible",
+        "isPartOf": { "@id": "https://gold.lw-gems.com/#website" }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html#breadcrumb",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Lab Home", "item": "https://gold.lw-gems.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Materials", "item": "https://gold.lw-gems.com/materials/" },
+          { "@type": "ListItem", "position": 3, "name": "Diamante", "item": "https://gold.lw-gems.com/materials/diamante/" },
+          { "@type": "ListItem", "position": 4, "name": "Procesos internos e inclusiones", "item": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html" }
+        ]
+      },
+      {
+        "@type": "Article",
+        "@id": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html#article",
+        "headline": "Procesos internos e inclusiones en diamante (C): lectura reproducible",
+        "description": "Nota técnica sobre procesos internos en diamante (C): inclusiones, rasgos de crecimiento, tensiones y modificaciones posteriores. Señales observables, jerarquía de inferencia y límites de interpretación.",
+        "inLanguage": "es-AR",
+        "mainEntityOfPage": { "@id": "https://gold.lw-gems.com/materials/diamante/procesos-internos-inclusiones-y-modificaciones.html#webpage" },
+        "isPartOf": { "@id": "https://gold.lw-gems.com/#website" },
+        "author": { "@type": "Organization", "name": "LW Gems", "@id": "https://lw-gems.com/#organization" },
+        "publisher": { "@type": "Organization", "name": "LW Gems", "@id": "https://lw-gems.com/#organization" },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-07"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="page-note">
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">
+        <a class="brandName" href="/" aria-label="Gold Node Home">GOLD NODE</a>
+        <span class="brandTag">non-commercial</span>
+      </div>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="/">Lab Home</a>
+        <a href="/materials/">Ciencia de materiales</a>
+        <a href="/lab-notes/">Notas técnicas</a>
+        <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container" role="main">
+    <section class="hero">
+      <div class="kicker">LAB NOTE · MATERIALS · DIAMANTE (C)</div>
+
+      <h1>Procesos internos e inclusiones en diamante (C): lectura reproducible</h1>
+
+      <p class="lead">
+        Esta nota organiza señales internas relevantes del diamante: inclusiones, rasgos de crecimiento,
+        dominios de tensión y modificaciones posteriores. Se define un método de lectura basado en señales
+        convergentes y en declaración explícita de límites.
+      </p>
+
+      <p class="muted small">
+        Material: Diamante (C) · Dominio: Procesos internos / Inclusiones / Lectura material ·
+        Archivo: <a href="/materials/diamante/">/materials/diamante</a> · Estado: canónico
+      </p>
+
+      <p class="muted small">
+        <strong>Publicado:</strong> <time datetime="2026-01-07">07 Ene 2026</time>
+        <span class="dot">·</span>
+        <strong>Actualizado:</strong> <time datetime="2026-01-07">07 Ene 2026</time>
+        <span class="dot">·</span>
+        <strong>Versión:</strong> 1.0.0
+      </p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>1. Definición operativa</h2>
+      <p>
+        En esta nota, “procesos internos” refiere a rasgos observables dentro del diamante
+        (inclusiones, patrones, zonas, líneas, dominios de tensión) que registran etapas de crecimiento
+        y/o eventos posteriores. La lectura interna describe evidencia; no asigna valor ni “origen”
+        por un atributo aislado.
+      </p>
+
+      <h2>2. Tipos de señales internas</h2>
+      <p>
+        Las señales internas relevantes incluyen: inclusiones sólidas, inclusiones fluidas, nubes,
+        líneas o planos de rasgo, zonación interna y dominios con respuesta diferencial a la iluminación.
+        Estas señales pueden coexistir en un mismo ejemplar y registrar historia múltiple.
+      </p>
+
+      <h2>3. Inclusiones: definición y función en lectura</h2>
+      <p>
+        “Inclusión” refiere a material atrapado durante o después del crecimiento. Su interés técnico
+        depende de: (i) morfología, (ii) distribución, (iii) relación con zonación, y (iv) consistencia
+        con otros rasgos. Una inclusión aislada rara vez sustenta una interpretación completa.
+      </p>
+
+      <h2>4. Rasgos de crecimiento interno</h2>
+      <p>
+        Señales compatibles con crecimiento incluyen zonación coherente, patrones repetitivos, límites
+        entre dominios y alineaciones internas consistentes. La lectura debe describir geometría,
+        continuidad y jerarquía, evitando atribución causal cuando no es verificable.
+      </p>
+
+      <h2>5. Tensiones internas y respuesta óptica</h2>
+      <p>
+        El diamante puede presentar dominios de tensión interna que se manifiestan como variaciones
+        de respuesta bajo diferentes condiciones de observación. La tensión es un dato físico que puede
+        asociarse a crecimiento o a eventos posteriores; sin correlación adicional, no se fuerza conclusión.
+      </p>
+
+      <h2>6. Modificaciones posteriores: principio de lectura</h2>
+      <p>
+        Existen intervenciones posteriores que alteran propiedades observables. En lectura técnica,
+        la primera regla es separar: (i) qué se observa, (ii) qué hipótesis son compatibles, y (iii)
+        qué no se puede afirmar con evidencia disponible. El objetivo es reducir falsos positivos.
+      </p>
+
+      <h2>7. Señales internas compatibles con modificación</h2>
+      <p>
+        Señales compatibles con modificación incluyen: cambios abruptos de respuesta entre dominios,
+        patrones no coherentes con crecimiento, distribución anómala de rasgos, y presencia de evidencias
+        de intervención en superficie que correlacionan con cambios internos. Ninguna señal es concluyente por sí sola.
+      </p>
+
+      <h2>8. Jerarquía de inferencia</h2>
+      <p>
+        La inferencia interna es más robusta cuando:
+        (i) múltiples señales apuntan a la misma hipótesis,
+        (ii) existe consistencia espacial (dominios),
+        (iii) hay correlación entre interior y superficie,
+        y (iv) se documentan condiciones de observación.
+      </p>
+
+      <h2>9. Límites de interpretación</h2>
+      <p>
+        Sin datos instrumentales o sin documentación suficiente, la lectura interna debe limitarse
+        a descripción y compatibilidades. Declarar “no determinable” es parte del método, no un fallo.
+      </p>
+
+      <h2>10. Síntesis operativa</h2>
+      <p>
+        Inclusiones y rasgos internos permiten reconstruir etapas y reducir incertidumbre, pero requieren
+        lectura por conjuntos de señales y control estricto de inferencias. El interior del diamante no “explica”
+        por sí solo: soporta hipótesis en combinación con otros planos de evidencia.
+      </p>
+
+      <hr>
+
+      <p style="margin-top:18px">
+        <a class="backLink" href="/materials/diamante/">← Volver a Diamante</a>
+        <span class="dot">·</span>
+        <a class="backLink" href="/materials/">Materials</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="muted">LW Gems · Gold Node (non-commercial) · Materials</p>
+    </div>
+  </footer>
+</body>
+</html>
