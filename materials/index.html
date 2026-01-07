@@ -85,63 +85,58 @@
 
 <body class="page-materials">
   <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <!-- Header CANÓNICO (igual al Home / Notes) -->
   <header class="topbar" role="banner">
     <div class="container">
-      <nav class="topnav" aria-label="Navegación principal">
-        <!-- Home real del nodo -->
-        <a href="https://gold.lw-gems.com/" class="brand">GOLD NODE</a>
+      <div class="brand">
+        <a class="brandName" href="/" aria-label="Gold Node Home">GOLD NODE</a>
+        <span class="brandTag">non-commercial</span>
+      </div>
 
-        <div class="navlinks">
-          <a href="https://gold.lw-gems.com/">Lab Home</a>
-          <a href="https://gold.lw-gems.com/materials/">Materials</a>
-          <a href="https://gold.lw-gems.com/lab-notes/">Notas técnicas</a>
-          <a href="https://lw-gems.com/">LW Gems</a>
-        </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="/">Lab Home</a>
+        <a aria-current="page" href="/materials/">Ciencia de materiales</a>
+        <a href="/lab-notes/">Notas técnicas</a>
+        <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
       </nav>
     </div>
   </header>
 
   <main id="content" class="container" role="main">
-   <section class="materialsGrid" aria-label="Sub-perfiles de materiales">
-
-  <a class="materialCard" href="/materials/oro/">
-    <div class="materialTitle">Oro (Au)</div>
-    <div class="materialDesc">Forma, estructura, superficie y comportamiento del oro como sistema material.</div>
-    <div class="materialMeta">MATERIAL</div>
-  </a>
-
-  <a class="materialCard" href="/materials/diamante/">
-    <div class="materialTitle">Diamante (C)</div>
-    <div class="materialDesc">Crecimiento cristalino, defectos, estructura y propiedades del diamante.</div>
-    <div class="materialMeta">MATERIAL</div>
-  </a>
-
-  <a class="materialCard" href="/materials/corindon/">
-    <div class="materialTitle">Corindón (Al₂O₃)</div>
-    <div class="materialDesc">Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</div>
-    <div class="materialMeta">MATERIAL</div>
-  </a>
-
-</section>
-        <a class="note-card" href="https://gold.lw-gems.com/materials/oro/">
-          <h2>Oro (Au)</h2>
-          <p>Forma, estructura, superficie y comportamiento del oro como sistema material.</p>
-          <span class="tag">MATERIAL</span>
-        </a>
-
-        <a class="note-card" href="https://gold.lw-gems.com/materials/diamante/">
-          <h2>Diamante (C)</h2>
-          <p>Crecimiento cristalino, defectos, estructura y propiedades del diamante.</p>
-          <span class="tag">MATERIAL</span>
-        </a>
-
-        <a class="note-card" href="https://gold.lw-gems.com/materials/corindon/">
-          <h2>Corindón (Al₂O₃)</h2>
-          <p>Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</p>
-          <span class="tag">MATERIAL</span>
-        </a>
-      </section>
+    <section class="hero">
+      <div class="kicker">ARCHIVO · MATERIALS</div>
+      <h1>Materials</h1>
+      <p class="lead">
+        Archivo de materiales. Sub-perfiles técnicos no comerciales: Oro, Diamante y Corindón.
+        Lectura material desde un enfoque estructural.
+      </p>
     </section>
+
+    <!-- Cards (misma lógica visual que Lab Notes) -->
+    <section class="materialsGrid" aria-label="Sub-perfiles de materiales">
+      <a class="materialCard" href="/materials/oro/">
+        <div class="materialTitle">Oro (Au)</div>
+        <div class="materialDesc">Forma, estructura, superficie y comportamiento del oro como sistema material.</div>
+        <div class="materialMeta">MATERIAL</div>
+      </a>
+
+      <a class="materialCard" href="/materials/diamante/">
+        <div class="materialTitle">Diamante (C)</div>
+        <div class="materialDesc">Crecimiento cristalino, defectos, estructura y propiedades del diamante.</div>
+        <div class="materialMeta">MATERIAL</div>
+      </a>
+
+      <a class="materialCard" href="/materials/corindon/">
+        <div class="materialTitle">Corindón (Al₂O₃)</div>
+        <div class="materialDesc">Estructura, defectos, crecimiento y mecanismos que determinan zafiro y rubí.</div>
+        <div class="materialMeta">MATERIAL</div>
+      </a>
+    </section>
+
+    <div class="backRow">
+      <a class="backLink" href="/">← Volver a Lab Home</a>
+    </div>
   </main>
 
   <footer class="footer" role="contentinfo">
