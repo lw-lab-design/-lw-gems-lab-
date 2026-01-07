@@ -1,171 +1,96 @@
 <!doctype html>
 <html lang="es-AR">
 <head>
-  <!-- 11–14: lang + content-language + viewport -->
   <meta charset="utf-8">
   <meta http-equiv="content-language" content="es-AR">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- 1–5: title/description + robots + canonical + OG + Twitter -->
-  <title>Oro (Au) · Materials · LW Gems</title>
-  <meta name="description" content="Sub-perfil material: Oro (Au). Archivo técnico no comercial: forma, estructura, superficie y comportamiento del oro en condiciones reales.">
+  <title>Oro (Au) · Materials · Gold Node</title>
+  <meta name="description" content="Sub-perfil material: Oro (Au). Lectura técnica no comercial del oro como sistema: morfología, estructura, superficie y comportamiento bajo condiciones reales.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <link rel="canonical" href="https://gold.lw-gems.com/materials/oro/">
 
-  <!-- 8: CSS único -->
   <link rel="stylesheet" href="/assets/css/lw-system.css">
 
-  <!-- 18: preconnect opcional -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
-
-  <!-- OG -->
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="LW Gems">
-  <meta property="og:title" content="Oro (Au) · Materials">
-  <meta property="og:description" content="Archivo técnico no comercial: forma, estructura, superficie y comportamiento del oro.">
-  <meta property="og:url" content="https://gold.lw-gems.com/materials/oro/">
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Oro (Au) · Materials">
-  <meta name="twitter:description" content="Archivo técnico no comercial: forma, estructura, superficie y comportamiento del oro.">
-
-  <!-- 20: lw:note-version y lw:note-status (para perfiles también) -->
-  <meta name="lw:note-version" content="1.0.0">
+  <meta name="lw:page-type" content="material-page">
   <meta name="lw:note-status" content="canonical">
-
-  <!-- 6–7: JSON-LD + 10 @id conectado + 15–17 author/publisher/isPartOf/about -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "@id": "https://gold.lw-gems.com/#website",
-        "url": "https://gold.lw-gems.com/",
-        "name": "LW Gems · Gold Node"
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://lw-gems.com/#organization",
-        "name": "LW Gems",
-        "url": "https://lw-gems.com/"
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://gold.lw-gems.com/materials/oro/#webpage",
-        "url": "https://gold.lw-gems.com/materials/oro/",
-        "name": "Oro (Au) · Materials",
-        "isPartOf": { "@id": "https://gold.lw-gems.com/#website" },
-        "about": [
-          { "@type": "Thing", "name": "Oro (Au)" },
-          { "@type": "Thing", "name": "Ciencia de materiales" }
-        ]
-      },
-      {
-        "@type": "BreadcrumbList",
-        "@id": "https://gold.lw-gems.com/materials/oro/#breadcrumb",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Lab Home", "item": "https://gold.lw-gems.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Materials", "item": "https://gold.lw-gems.com/materials/" },
-          { "@type": "ListItem", "position": 3, "name": "Oro", "item": "https://gold.lw-gems.com/materials/oro/" }
-        ]
-      }
-    ]
-  }
-  </script>
 </head>
 
-<body class="page-materials">
+<body class="page-note">
   <a class="skip-link" href="#content">Saltar al contenido</a>
 
-  <header class="topbar" role="banner">
+  <!-- Header igual a Home/Lab Notes -->
+  <header class="topbar">
     <div class="container">
-      <nav class="topnav" aria-label="Navegación principal">
-        <!-- FIX: absoluto -->
-        <a href="https://gold.lw-gems.com/" class="brand">GOLD NODE</a>
+      <div class="brand">
+        <a class="brandName" href="/" aria-label="Gold Node Home">GOLD NODE</a>
+        <span class="brandTag">non-commercial</span>
+      </div>
 
-        <div class="navlinks">
-          <!-- FIX: Lab Home real -->
-          <a href="https://gold.lw-gems.com/">Lab Home</a>
-
-          <!-- FIX: Materials -->
-          <a href="https://gold.lw-gems.com/materials/" aria-current="page">Materials</a>
-
-          <!-- FIX: Notas -->
-          <a href="https://gold.lw-gems.com/lab-notes/">Notas técnicas</a>
-
-          <!-- Sitio comercial -->
-          <a href="https://lw-gems.com/">LW Gems</a>
-        </div>
+      <nav class="menu" aria-label="Primary">
+        <a href="/">Lab Home</a>
+        <a href="/materials/" aria-current="page">Ciencia de materiales</a>
+        <a href="/lab-notes/">Notas técnicas</a>
+        <a href="https://lw-gems.com" target="_blank" rel="noopener">LW Gems</a>
       </nav>
     </div>
   </header>
 
   <main id="content" class="container" role="main">
-    <article class="lw-profile" aria-labelledby="title">
-      <header class="lw-note__hero">
-        <p class="kicker">ARCHIVO · MATERIAL</p>
-        <h1 id="title" class="title">Oro (Au)</h1>
+    <section class="hero">
+      <div class="kicker">ARCHIVO · MATERIAL</div>
 
-        <p class="lead">
-          Sub-perfil material. Lectura técnica no comercial del oro como sistema: morfología, estructura,
-          superficie y comportamiento bajo condiciones reales.
-        </p>
+      <h1>Oro (Au)</h1>
 
-        <p class="meta">
-          <span class="chip">Material: Oro (Au)</span>
-          <span class="chip">Archivo: /materials</span>
-          <span class="chip">Estado: Canónico</span>
-        </p>
+      <p class="lead">
+        Sub-perfil material. Lectura técnica no comercial del oro como sistema:
+        morfología, estructura, superficie y comportamiento bajo condiciones reales.
+      </p>
 
-        <p class="dates">
-          <strong>Actualizado:</strong> <time datetime="2026-01-06">06 Ene 2026</time>
-        </p>
-      </header>
+      <p class="muted small">
+        <strong>Material:</strong> Oro (Au) ·
+        <strong>Archivo:</strong> /materials ·
+        <strong>Estado:</strong> Canónico
+      </p>
 
-      <hr class="sep">
+      <p class="muted small">
+        <strong>Actualizado:</strong> <time datetime="2026-01-06">06 Ene 2026</time>
+      </p>
+    </section>
 
-      <section class="lw-profile__notes">
-        <h2>Notas del material</h2>
-<div class="note-grid">
+    <hr>
 
-  <a class="note-card"
-     href="https://gold.lw-gems.com/lab-notes/oro/morfologia-natural-del-oro/">
-    …
-  </a>
+    <h2 class="sectionTitle">Notas del material</h2>
 
-  <a class="note-card"
-     href="https://gold.lw-gems.com/lab-notes/oro/estructura-cristalina-del-oro/">
-    …
-  </a>
+    <!-- IMPORTANTE:
+         Usamos el MISMO formato de cards que Lab Notes (noteCard/noteTitle/noteDesc/noteMeta)
+         para que se vea igual. -->
+    <section class="notesGrid" aria-label="Notas del material: Oro">
+      <a class="noteCard" href="/materials/oro/morfologia-natural-del-oro.html">
+        <div class="noteTitle">Morfología natural del oro: formas, procesos y lectura diagnóstica</div>
+        <div class="noteDesc">Mapa morfológico, señales diagnósticas, errores comunes y protocolo de observación.</div>
+        <div class="noteMeta">LAB NOTE · MATERIALS · ORO (Au)</div>
+      </a>
 
-  <a class="note-card"
-     href="https://gold.lw-gems.com/lab-notes/oro/fatiga-material-en-oro/">
-    …
-  </a>
+      <!-- Si querés, podés sumar más notas acá con el mismo patrón -->
+      <!--
+      <a class="noteCard" href="/materials/oro/otra-nota.html">
+        <div class="noteTitle">Título</div>
+        <div class="noteDesc">Descripción</div>
+        <div class="noteMeta">LAB NOTE · MATERIALS · ORO (Au)</div>
+      </a>
+      -->
+    </section>
 
-  <a class="note-card"
-     href="https://gold.lw-gems.com/lab-notes/oro/superficie-y-desgaste-del-oro/">
-    …
-  </a>
-
-</div>
-        
-
-        <p style="margin-top:18px">
-          <a class="backlink" href="https://gold.lw-gems.com/materials/">← Volver a Materials</a>
-        </p>
-      </section>
-    </article>
+    <div class="backRow">
+      <a class="backLink" href="/materials/">← Volver a Materials</a>
+    </div>
   </main>
 
-  <footer class="footer" role="contentinfo">
+  <footer class="footer">
     <div class="container">
       <p class="muted">LW Gems · Gold Node (non-commercial)</p>
     </div>
   </footer>
-
-  <!-- 19: sin JS pesado -->
 </body>
 </html>
