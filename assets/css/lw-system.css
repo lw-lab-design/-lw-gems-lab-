@@ -375,3 +375,39 @@ body.page-notes-index .noteTitle{
 .noteCard:hover{
   border-color: #dbe4ff;
 }
+/* =========================
+   AZUL EN TÍTULOS DE CARDS · robusto
+   (Lab Notes + Notas del material + listados)
+   ========================= */
+
+/* 1) Mantener H1 azul en todo el sitio (si ya lo tenés, dejalo) */
+h1{ color: var(--blue); }
+
+/* 2) Cards de notas: cubrir variantes por clase */
+.noteTitle,
+.materialTitle{
+  color: var(--blue);
+}
+
+/* 3) Cards de notas: cubrir variantes por estructura (si no hay clase) */
+.noteCard h2,
+.noteCard h3,
+.materialCard h2,
+.materialCard h3{
+  color: var(--blue);
+}
+
+/* 4) “Notas del material” / listados (cuando no usan .noteCard)
+   - Esto apunta a contenedores de grilla/lista comunes sin tocar el body del artículo */
+.notesGrid a h2,
+.notesGrid a h3,
+.materialsGrid a h2,
+.materialsGrid a h3{
+  color: var(--blue);
+}
+
+/* 5) Evitar que el azul se meta en H2/H3 dentro de artículos largos */
+body.page-note h2,
+body.page-note h3{
+  color: var(--text);
+}
