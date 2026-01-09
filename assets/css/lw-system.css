@@ -347,3 +347,31 @@ body.page-note strong{font-weight:650}
   box-shadow:var(--shadow);
 }
 .btn:hover{background:var(--chip2)}
+/* =========================
+   JERARQUÍA GLOBAL · AZUL INSTITUCIONAL
+   ========================= */
+
+/* 1) H1 — todo el sitio */
+h1{
+  color: var(--blue);
+  font-weight: 700;
+}
+
+/* 2) Títulos de cards SOLO en índices */
+body.page-materials .materialTitle,
+body.page-notes-index .noteTitle{
+  color: var(--blue);
+}
+
+/* 3) Menu activo — azul implícito (no texto azul) */
+.menu a[aria-current="page"]{
+  background: #f5f8ff;       /* gris con tinte azul */
+  border-color: #dbe4ff;
+  color: var(--text);
+}
+
+/* 4) Hover técnico (sutil, coherente) */
+.materialCard:hover,
+.noteCard:hover{
+  border-color: #dbe4ff;
+}
