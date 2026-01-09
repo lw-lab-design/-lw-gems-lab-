@@ -448,3 +448,24 @@ body.page-note h2,
 body.page-note h3{
   color: var(--text);
 }
+/* =========================
+   LAB NOTES INDEX · TÍTULOS EN AZUL (forzado)
+   ========================= */
+
+:root{
+  --blue:#1f5fbf;   /* si ya existe, no molesta */
+  --blue2:#0b4aa2;
+}
+
+/* H1 global azul (si ya lo tenés, ok) */
+h1{ color: var(--blue); }
+
+/* Lab notes index: títulos de cards */
+body.page-notes-index .noteCard .noteTitle{
+  color: var(--blue) !important;
+}
+
+/* Opcional: hover sutil */
+body.page-notes-index .noteCard:hover .noteTitle{
+  color: var(--blue2) !important;
+}
