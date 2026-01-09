@@ -469,3 +469,4 @@ body.page-notes-index .noteCard .noteTitle{
 body.page-notes-index .noteCard:hover .noteTitle{
   color: var(--blue2) !important;
 }
+body.page-note .hero h1{ color: var(--blue); }
