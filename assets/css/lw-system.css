@@ -411,3 +411,40 @@ body.page-note h2,
 body.page-note h3{
   color: var(--text);
 }
+/* =========================
+   AZUL INSTITUCIONAL · GLOBAL (controlado)
+   ========================= */
+
+/* A) Jerarquía principal: H1 en todo el sitio */
+h1{
+  color: var(--blue);
+}
+
+/* B) Home: enlaces de materiales (ledger) en azul */
+.entryLink{
+  color: var(--blue);
+}
+.entryLink:hover{
+  color: var(--blue2);
+  opacity: 1;
+}
+
+/* C) Índices / cards: títulos en azul (por clase) */
+.cardTitle,
+.materialTitle,
+.noteTitle{
+  color: var(--blue);
+}
+
+/* D) Índices / cards: títulos en azul (por estructura, si no hay clase) */
+.card h2, .card h3,
+.materialCard h2, .materialCard h3,
+.noteCard h2, .noteCard h3{
+  color: var(--blue);
+}
+
+/* E) IMPORTANTE: dentro de una nota individual, H2/H3 vuelven a negro */
+body.page-note h2,
+body.page-note h3{
+  color: var(--text);
+}
